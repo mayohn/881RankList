@@ -77,7 +77,10 @@ public class RankList {
 				}
 			}
 			if (isExist != -1) {
-				rankerList.get(isExist).getList().add(list.get(i).getName());
+				if (!rankerList.get(isExist).getList().contains(list.get(i).getName())) {
+					rankerList.get(isExist).getList().add(list.get(i).getName());
+				}
+			
 			} else {
 				Ranker ranker = new Ranker();
 				ranker.setMoney(list.get(i).getMoney());
