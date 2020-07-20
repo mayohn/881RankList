@@ -104,7 +104,7 @@ public class RankList {
 			BufferedWriter bw = new BufferedWriter(
 					new OutputStreamWriter(new FileOutputStream(new File(path + "\\排行.txt")), "UTF-8"));
 			StringBuffer br = new StringBuffer();
-			br.append("881团");
+			br.append("A188团");
 			br.append(Utils.getDate());
 
 			br.append("会员日结工资排名榜\r\n\r\n");
