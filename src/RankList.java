@@ -114,7 +114,7 @@ public class RankList {
 				StringBuffer st = new StringBuffer();
 				for (int j = 0; j < ranker.getList().size(); j++) {
 					if (j == 0) {
-						st.append("第" + ChineseNumber.NumberToChn(i + 1) + "名：");
+						st.append("第" + ChineseNumber.getNumberToChnResult(i + 1) + "名：");
 					}
 					if ((j - 1) % 3 == 0 || j == ranker.getList().size() - 1) {
 						st.append(ranker.getList().get(j) + ranker.getMoney() + "\r\n\r\n");
